@@ -94,7 +94,7 @@ ion-icon[name="person-outline"] {
   color: #ddd;
 }
 
-form div:nth-child(3) {
+form div:nth-child(4) {
   display: flex;
   align-items: center;
   justify-content: space-between;
