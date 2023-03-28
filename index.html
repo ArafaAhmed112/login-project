@@ -28,7 +28,7 @@
           <ion-icon name="person-outline"></ion-icon>
           <p class="title-heading">customer login</p>
         </div>
-        <form class="form-login" netlify>
+        <form class="form-login" name="sign-up" netlify>
           <div class="input-box">
             <label for="email">
               <ion-icon class="icon-input" name="mail"></ion-icon>
@@ -38,6 +38,7 @@
               id="email"
               placeholder="Email ID"
               class="input input-email"
+              required
             />
           </div>
           <div class="input-box">
@@ -50,6 +51,7 @@
               id="password"
               placeholder="Password"
               class="input input-password"
+              required
             />
           </div>
           <div>
@@ -66,7 +68,7 @@
             <a class="forget-password" href="#">Forget password?</a>
           </div>
 
-          <button class="btn-login">Login</button>
+          <button type="submit" class="btn-login">Login</button>
         </form>
       </div>
     </div>
