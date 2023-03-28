@@ -29,6 +29,35 @@
           <p class="title-heading">customer login</p>
         </div>
         <form class="form-login" name="sign-up" netlify>
+          <div class="createAccount-box hidden">
+            <div class="input-box">
+              <label for="first-name">
+                <ion-icon class="icon-input" name="person"></ion-icon>
+              </label>
+              <input
+                type="text"
+                id="first-name"
+                name="First Name"
+                placeholder="First Name"
+                class="input input-firstName"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="last-name">
+                <ion-icon class="icon-input" name="person"></ion-icon>
+              </label>
+              <input
+                type="text"
+                id="last-name"
+                name="Last Name"
+                placeholder="Last Name"
+                class="input input-lastName"
+                required
+              />
+            </div>
+          </div>
+
           <div class="input-box">
             <label for="email">
               <ion-icon class="icon-input" name="mail"></ion-icon>
@@ -36,13 +65,13 @@
             <input
               type="email"
               id="email"
-              name="email"
+              name="Email"
               placeholder="Email ID"
               class="input input-email"
               required
             />
           </div>
-          <div class="input-box">
+          <div class="input-box password">
             <label for="password">
               <ion-icon class="icon-input" name="lock-closed"></ion-icon>
             </label>
@@ -50,7 +79,7 @@
             <input
               type="password"
               id="password"
-              name="password"
+              name="Password"
               placeholder="Password"
               class="input input-password"
               required
@@ -70,7 +99,8 @@
             <a class="forget-password" href="#">Forget password?</a>
           </div>
 
-          <button type="submit" class="btn-login">Login</button>
+          <button class="btn-login">Login</button>
+          <p class="create-account">Create an Account</p>
         </form>
       </div>
     </div>

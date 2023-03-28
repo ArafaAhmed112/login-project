@@ -1,3 +1,6 @@
+const btnLogin = document.querySelector(".btn-login");
+const btnCreateAccount = document.querySelector(".create-account");
+
 document.querySelectorAll(".input").forEach((input) => {
   input.addEventListener("focus", (e) => {
     const item = e.target;
@@ -17,6 +20,15 @@ document.querySelectorAll(".input").forEach((input) => {
   });
 });
 
-// document
-//   .querySelector(".btn-login")
-//   .addEventListener("click", (e) => e.preventDefault());
+btnCreateAccount.addEventListener("click", (e) => {
+  document.querySelector(".createAccount-box").classList.toggle("hidden");
+  if (
+    document.querySelector(".createAccount-box").classList.contains("hidden")
+  ) {
+    btnLogin.textContent = "Login";
+    btnCreateAccount.textContent = "Create Account";
+  } else {
+    btnLogin.textContent = "Create Account";
+    btnCreateAccount.textContent = "Login";
+  }
+});

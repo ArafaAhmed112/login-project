@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  row-gap: 7rem;
+  row-gap: 5rem;
 }
 
 .form-login {
@@ -66,7 +66,7 @@ ion-icon[name="person-outline"] {
   border-bottom: 2px solid transparent;
   padding: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   transition: border linear 0.3s;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.07);
 
@@ -77,6 +77,10 @@ ion-icon[name="person-outline"] {
 .input-box ion-icon {
   font-size: 2rem;
   margin-right: 4rem;
+}
+
+.input-box.password {
+  margin-bottom: 2rem !important;
 }
 
 .input {
@@ -94,7 +98,7 @@ ion-icon[name="person-outline"] {
   color: #ddd;
 }
 
-form div:nth-child(4) {
+form div:last-of-type {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +122,8 @@ form div:nth-child(4) {
 }
 
 .forget-password:link,
-.forget-password:visited {
+.forget-password:visited,
+.create-account {
   font-size: 1.4rem;
   color: #ccc;
   text-decoration: none;
@@ -126,10 +131,12 @@ form div:nth-child(4) {
   padding-bottom: 0.2rem;
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .forget-password:hover,
-.forget-password:active {
+.forget-password:active,
+.create-account:hover {
   color: #fff;
   border-bottom: 1px solid;
 }
@@ -138,6 +145,7 @@ form div:nth-child(4) {
   width: 100%;
   font-size: 3rem;
   padding: 1.5rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   color: #ddd;
   background-color: rgb(18, 75, 146);
@@ -148,6 +156,33 @@ form div:nth-child(4) {
 
 .btn-login:hover {
   background-color: rgb(27, 87, 161);
+}
+
+.createAccount-box {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.createAccount-box .input-box {
+  margin-bottom: 0;
+}
+
+.createAccount-box .input-box:nth-child(1) {
+  max-width: 45%;
+}
+
+.createAccount-box .input-box:nth-child(2) {
+  max-width: 45%;
+}
+
+.create-account {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 57em) {
@@ -164,5 +199,19 @@ form div:nth-child(4) {
 
   .title-heading {
     font-size: 3rem;
+  }
+
+  .createAccount-box {
+    flex-direction: column;
+  }
+
+  .createAccount-box .input-box:nth-child(1) {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .createAccount-box .input-box:nth-child(2) {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
