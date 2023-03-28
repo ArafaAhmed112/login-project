@@ -17,6 +17,6 @@ document.querySelectorAll(".input").forEach((input) => {
   });
 });
 
-document
-  .querySelector(".btn-login")
-  .addEventListener("click", (e) => e.preventDefault());
+// document
+//   .querySelector(".btn-login")
+//   .addEventListener("click", (e) => e.preventDefault());
