@@ -43,7 +43,7 @@ body {
   row-gap: 5rem;
 }
 
-.form-login {
+.form {
   max-width: 100%;
 }
 
@@ -84,18 +84,18 @@ ion-icon[name="person-outline"] {
 }
 
 .input {
-  width: -webkit-fill-available;
   font-size: 2rem;
   border: none;
   background-color: transparent;
+  color: #eee;
 }
 
 .input::placeholder {
-  color: #ccc;
+  color: #bbb;
 }
 
 .input:focus::placeholder {
-  color: #ddd;
+  color: #ccc;
 }
 
 form div:last-of-type {
@@ -110,11 +110,13 @@ form div:last-of-type {
   margin-right: 1rem;
   transform: scale(1.2);
   accent-color: rgb(18, 75, 146);
+  cursor: pointer;
 }
 
 .input-checked + label {
   font-size: 1.4rem;
   color: #ddd;
+  cursor: pointer;
 }
 
 .input-checked + label:hover {
@@ -158,60 +160,20 @@ form div:last-of-type {
   background-color: rgb(27, 87, 161);
 }
 
-.createAccount-box {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.createAccount-box .input-box {
-  margin-bottom: 0;
-}
-
-.createAccount-box .input-box:nth-child(1) {
-  max-width: 45%;
-}
-
-.createAccount-box .input-box:nth-child(2) {
-  max-width: 45%;
-}
-
 .create-account {
   display: inline-block;
 }
-
-.hidden {
-  display: none;
-}
-
+/*--------- Responsive ---------*/
 @media (max-width: 57em) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 28em) {
   .container {
     padding: 2rem;
+  }
+}
+@media (max-width: 28em) {
+  .container {
     padding-top: 6rem;
   }
-
   .title-heading {
     font-size: 3rem;
-  }
-
-  .createAccount-box {
-    flex-direction: column;
-  }
-
-  .createAccount-box .input-box:nth-child(1) {
-    max-width: 100%;
-    margin-bottom: 3rem;
-  }
-
-  .createAccount-box .input-box:nth-child(2) {
-    max-width: 100%;
-    padding: 1rem;
   }
 }

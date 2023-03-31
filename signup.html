@@ -14,7 +14,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <title>Login</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -24,7 +24,34 @@
           <ion-icon name="person-outline"></ion-icon>
           <p class="title-heading">customer login</p>
         </div>
-        <form class="form" name="sign-in" netlify>
+        <form class="form" name="sign-up" netlify>
+          <div class="input-box">
+            <label for="first-name">
+              <ion-icon class="icon-input" name="person"></ion-icon>
+            </label>
+            <input
+              type="text"
+              id="first-name"
+              name="First Name"
+              placeholder="First Name"
+              class="input input-firstName"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="last-name">
+              <ion-icon class="icon-input" name="person"></ion-icon>
+            </label>
+            <input
+              type="text"
+              id="last-name"
+              name="Last Name"
+              placeholder="Last Name"
+              class="input input-lastName"
+              required
+            />
+          </div>
+
           <div class="input-box">
             <label for="email">
               <ion-icon class="icon-input" name="mail"></ion-icon>
@@ -66,8 +93,8 @@
             <a class="forget-password" href="#">Forget password?</a>
           </div>
 
-          <button class="btn-login">Login</button>
-          <a href="./signup.html" class="create-account">Create an Account</a>
+          <button class="btn-login">sign up</button>
+          <a href="./index.html" class="create-account">Login</a>
         </form>
       </div>
     </div>
