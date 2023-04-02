@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #4780ed;
-  background: linear-gradient(
+  /*background: linear-gradient(
     to top left,
     #4780ed,
     rgb(52, 109, 180),
@@ -24,15 +24,15 @@ body {
     rgb(52, 109, 180),
     rgb(77, 134, 205),
     #4780ed
-  );
+  );*/
 }
 
 .container {
   max-width: 50rem;
-  height: 100vh;
   margin: 0 auto;
   padding: 1rem;
   padding-top: 7rem;
+  margin-bottom: 5rem;
 }
 
 .login-box {
@@ -163,6 +163,32 @@ form div:last-of-type {
 .create-account {
   display: inline-block;
 }
+
+
+.copyright {
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 5rem;
+}
+
+.copyright-link:link,
+.copyright-link:visited {
+  font-size: 1.6rem;
+  color: #ccc;
+  text-decoration: none;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.copyright-link:hover,
+.copyright-link:active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 /*--------- Responsive ---------*/
 @media (max-width: 57em) {
   .container {
